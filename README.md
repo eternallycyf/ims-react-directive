@@ -22,8 +22,6 @@ node 版本 v18.13.0
 
 [![ docs by dumi][dumi-url]](https://d.umijs.org/) [![Build With father][father-url]](https://github.com/umijs/father/)
 
-![](https://github.com/othneildrew/Best-README-Template/raw/master/images/screenshot.png)
-
 <!-- gitpod url -->
 
 [gitpod-badge]: https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod
