@@ -1,5 +1,24 @@
 # Changelog
 
+## Version&nbsp;1.0.0
+
+<sup>Released on **2024-02-10**</sup>
+
+#### ✨ 新特性
+
+- Add ims-react-directive.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Add ims-react-directive ([849254a](https://github.com/eternallycyf/ims-react-directive/commit/849254a))
+
+</details>
+
 ## [Version&nbsp;1.6.0](https://github.com/eternallycyf/ims-react-directive/compare/v1.5.0...v1.6.0)
 
 <sup>Released on **2023-12-26**</sup>
