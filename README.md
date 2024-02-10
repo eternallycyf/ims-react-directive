@@ -4,7 +4,7 @@
 
 [//]: # '<img width="160" src="https://avatars.githubusercontent.com/u/17870709?v=4">'
 
-<h1>ims-template</h1>
+<h1>ims-react-directive</h1>
 
 一个开发 npm 项目的模板
 
@@ -27,7 +27,7 @@ node 版本 v18.13.0
 <!-- gitpod url -->
 
 [gitpod-badge]: https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod
-[gitpod-url]: https://gitpod.io/#https://github.com/ant-design/ims-template
+[gitpod-url]: https://gitpod.io/#https://github.com/ant-design/ims-react-directive
 
 <!-- umi url -->
 
@@ -36,24 +36,24 @@ node 版本 v18.13.0
 
 <!-- npm url -->
 
-[npm-image]: http://img.shields.io/npm/v/ims-template.svg?style=flat-square&color=deepgreen&label=latest
-[npm-url]: http://npmjs.org/package/ims-template
-[npm-size]: https://img.shields.io/bundlephobia/minzip/ims-template?color=deepgreen&label=gizpped%20size&style=flat-square
-[npm-size-url]: https://packagephobia.com/result?p=ims-template
+[npm-image]: http://img.shields.io/npm/v/ims-react-directive.svg?style=flat-square&color=deepgreen&label=latest
+[npm-url]: http://npmjs.org/package/ims-react-directive
+[npm-size]: https://img.shields.io/bundlephobia/minzip/ims-react-directive?color=deepgreen&label=gizpped%20size&style=flat-square
+[npm-size-url]: https://packagephobia.com/result?p=ims-react-directive
 
 <!-- coverage -->
 
-[coverage]: https://codecov.io/gh/eternallycyf/ims-template/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/eternallycyf/ims-template/branch/master
+[coverage]: https://codecov.io/gh/eternallycyf/ims-react-directive/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/eternallycyf/ims-react-directive/branch/master
 
 <!-- Github CI -->
 
-[test-ci]: https://github.com/eternallycyf/ims-template/workflows/Test%20CI/badge.svg
-[release-ci]: https://github.com/eternallycyf/ims-template/workflows/Release%20CI/badge.svg
-[test-ci-url]: https://github.com/eternallycyf/ims-template/actions?query=workflow%3ATest%20CI
-[release-ci-url]: https://github.com/eternallycyf/ims-template/actions?query=workflow%3ARelease%20CI
-[download-image]: https://img.shields.io/npm/dm/ims-template.svg?style=flat-square
-[download-url]: https://npmjs.org/package/ims-template
+[test-ci]: https://github.com/eternallycyf/ims-react-directive/workflows/Test%20CI/badge.svg
+[release-ci]: https://github.com/eternallycyf/ims-react-directive/workflows/Release%20CI/badge.svg
+[test-ci-url]: https://github.com/eternallycyf/ims-react-directive/actions?query=workflow%3ATest%20CI
+[release-ci-url]: https://github.com/eternallycyf/ims-react-directive/actions?query=workflow%3ARelease%20CI
+[download-image]: https://img.shields.io/npm/dm/ims-react-directive.svg?style=flat-square
+[download-url]: https://npmjs.org/package/ims-react-directive
 
 </div>
 
@@ -73,7 +73,7 @@ node 版本 v18.13.0
 推荐使用 `pnpm` 安装
 
 ```bash
-pnpm i ims-template -S
+pnpm i ims-react-directive -S
 ```
 
 ### 使用
@@ -115,20 +115,20 @@ This project is [MIT](./LICENSE) licensed.
 
 <!-- contributors -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/eternallycyf/ims-template.svg?style=flat
-[contributors-url]: https://github.com/eternallycyf/ims-template/graphs/contributors
+[contributors-shield]: https://img.shields.io/github/contributors/eternallycyf/ims-react-directive.svg?style=flat
+[contributors-url]: https://github.com/eternallycyf/ims-react-directive/graphs/contributors
 
 <!-- forks -->
 
-[forks-shield]: https://img.shields.io/github/forks/eternallycyf/ims-template.svg?style=flat
-[forks-url]: https://github.com/eternallycyf/ims-template/network/members
+[forks-shield]: https://img.shields.io/github/forks/eternallycyf/ims-react-directive.svg?style=flat
+[forks-url]: https://github.com/eternallycyf/ims-react-directive/network/members
 
 <!-- stargazers -->
 
-[stargazers-shield]: https://img.shields.io/github/stars/eternallycyf/ims-template.svg?style=flat
-[stargazers-url]: https://github.com/eternallycyf/ims-template/stargazers
+[stargazers-shield]: https://img.shields.io/github/stars/eternallycyf/ims-react-directive.svg?style=flat
+[stargazers-url]: https://github.com/eternallycyf/ims-react-directive/stargazers
 
 <!-- issues -->
 
-[issues-shield]: https://img.shields.io/github/issues/eternallycyf/ims-template.svg?style=flat
-[issues-url]: https://github.com/eternallycyf/ims-template/issues/new/choose
+[issues-shield]: https://img.shields.io/github/issues/eternallycyf/ims-react-directive.svg?style=flat
+[issues-url]: https://github.com/eternallycyf/ims-react-directive/issues/new/choose

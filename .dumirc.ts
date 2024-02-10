@@ -28,7 +28,7 @@ const themeConfig: SiteThemeConfig = {
           openExternal: true,
         },
       ],
-      features: featuresZh,
+      // features: featuresZh,
     },
     'en-US': {
       description: 'dumi2 theme similar to antd v5 website',
@@ -47,10 +47,10 @@ const themeConfig: SiteThemeConfig = {
   },
   socialLinks: { github: homepage },
   apiHeader: {
-    sourceUrl: `https://github.com/eternallycyf/ims-template/tree/master/src/components/{atomId}/index.tsx`,
-    docUrl: `https://github.com/eternallycyf/ims-template/tree/master/src/components/{atomId}/index.md`,
-    pkg: 'ims-template',
-    match: ['/ims-template/src/component'],
+    sourceUrl: `https://github.com/eternallycyf/ims-react-directive/tree/master/src/components/{atomId}/index.tsx`,
+    docUrl: `https://github.com/eternallycyf/ims-react-directive/tree/master/src/components/{atomId}/index.md`,
+    pkg: 'ims-react-directive',
+    match: ['/ims-react-directive/src/component'],
   },
   footerConfig: {
     bottom: '2023',
@@ -94,8 +94,17 @@ export default defineConfig({
   },
   resolve: {
     docDirs: ['docs'],
-    atomDirs: [{ type: 'component', dir: './src/components' }],
+    atomDirs: [{ type: 'component', dir: './src' }],
     entryFile: './src/index.ts',
     codeBlockMode: 'passive',
   },
+  extraBabelPresets: [
+    [
+      '@babel/preset-react',
+      {
+        runtime: 'automatic',
+        importSource: 'ims-react-directive',
+      },
+    ],
+  ],
 });

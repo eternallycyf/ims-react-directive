@@ -1,12 +1,12 @@
 ---
 hero:
-  title: ims-template
-  description: a online docs and npm package template
+  title: ims-react-directive
+  description: react use v-if and v-show
   actions:
     - text: 快速上手
       link: /guide
     - text: Github
-      link: https://github.com/eternallycyf/ims-template/
+      link: https://github.com/eternallycyf/ims-react-directive/
 ---
 
 <embed src="../README.md"></embed>
