@@ -4,7 +4,7 @@ title: 使用介绍
 
 ## ims-react-direcive
 
-<code src='./index.tsx'> </code>
+<code src='./demo/direcive.tsx'> </code>
 
 在 react 项目中使用 vue 指令，支持自定义指令。
 

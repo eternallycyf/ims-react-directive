@@ -71,8 +71,6 @@ pnpm i ims-react-directive -S
 
 ## ims-react-direcive
 
-<code src='./index.tsx'> </code>
-
 在 react 项目中使用 vue 指令，支持自定义指令。
 
 ### 安装依赖
