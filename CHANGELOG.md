@@ -1,5 +1,33 @@
 # Changelog
 
+### [Version&nbsp;1.0.1](https://github.com/eternallycyf/ims-react-directive/compare/v1.0.0...v1.0.1)
+
+<sup>Released on **2024-02-10**</sup>
+
+#### 🐛 修复
+
+- Ims-react-directive remove extra docs.
+
+#### 📝 文档
+
+- Update README.md, update README.md.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- Ims-react-directive remove extra docs ([32ecc78](https://github.com/eternallycyf/ims-react-directive/commit/32ecc78))
+
+#### Documentation
+
+- Update README.md ([2e464a9](https://github.com/eternallycyf/ims-react-directive/commit/2e464a9))
+- Update README.md ([3249d7f](https://github.com/eternallycyf/ims-react-directive/commit/3249d7f))
+
+</details>
+
 ## Version&nbsp;1.0.0
 
 <sup>Released on **2024-02-10**</sup>
