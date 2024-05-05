@@ -1,5 +1,33 @@
 # Changelog
 
+## [Version&nbsp;1.1.0](https://github.com/eternallycyf/ims-react-directive/compare/v1.0.1...v1.1.0)
+
+<sup>Released on **2024-05-05**</sup>
+
+#### ✨ 新特性
+
+- Add umd build, add umd build.
+
+#### 🔖 杂项
+
+- Update footer.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Add umd build ([c60bfab](https://github.com/eternallycyf/ims-react-directive/commit/c60bfab))
+- Add umd build ([787ecc4](https://github.com/eternallycyf/ims-react-directive/commit/787ecc4))
+
+#### Chores
+
+- Update footer ([8219f38](https://github.com/eternallycyf/ims-react-directive/commit/8219f38))
+
+</details>
+
 ### [Version&nbsp;1.0.1](https://github.com/eternallycyf/ims-react-directive/compare/v1.0.0...v1.0.1)
 
 <sup>Released on **2024-02-10**</sup>
