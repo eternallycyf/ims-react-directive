@@ -30,17 +30,28 @@ function execShowDirective(props: Props, ref: HTMLElement) {
   });
 }
 
-export const transformProps = (props: Props) => {
+/**
+ * @param props jsx props（会被就地修改：去掉指令字段）
+ * @param type 组件类型；仅对宿主 DOM（string）挂 ref，避免函数组件 ref 警告
+ */
+export const transformProps = (props: Props, type?: unknown) => {
   const originProps = clone(props);
+  let hasDirective = false;
 
   for (let [key, handle] of directiveMap) {
     if (props && hasOwnProperty.call(props, key)) {
+      hasDirective = true;
       const value = props[key];
       if (handle?.create?.(value, props) === false) {
         return false;
       }
       delete props[key];
     }
+  }
+
+  // 无指令时不要动 ref；函数组件也不能挂 ref
+  if (!hasDirective || typeof type !== 'string') {
+    return;
   }
 
   const originRef = props.ref;

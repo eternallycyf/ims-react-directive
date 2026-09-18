@@ -5,7 +5,7 @@ import '../directive';
 
 function jsx(type, config, maybeKey, source, self) {
   // 如果返回false，则表示不渲染组件
-  if (transformProps(config) === false) {
+  if (transformProps(config, type) === false) {
     return null;
   }
 
@@ -14,7 +14,7 @@ function jsx(type, config, maybeKey, source, self) {
 
 function jsxs(type, config, maybeKey, source, self) {
   // 如果返回false，则表示不渲染组件
-  if (transformProps(config) === false) {
+  if (transformProps(config, type) === false) {
     return null;
   }
 
