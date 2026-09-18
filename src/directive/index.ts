@@ -9,6 +9,10 @@ export type IDirectiveMapType = 'v-if' | 'v-show';
 
 const directiveMap: Map<IDirectiveMapType, IDirectiveHandle> = new Map();
 
+const hiddenStyle = {
+  display: 'none',
+};
+
 directiveMap
   .set('v-if', {
     create: (value) => {
@@ -28,10 +32,6 @@ directiveMap
       return true;
     },
   });
-
-const hiddenStyle = {
-  display: 'none',
-};
 
 export const directive = (name: IDirectiveMapType, hanlde: IDirectiveHandle): void => {
   if (name) {

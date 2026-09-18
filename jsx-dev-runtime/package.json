@@ -1,0 +1,5 @@
+{
+  "main": "../lib/jsx-dev-runtime/index.js",
+  "module": "../es/jsx-dev-runtime/index.js",
+  "types": "../es/jsx-dev-runtime/index.d.ts"
+}

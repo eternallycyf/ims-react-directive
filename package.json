@@ -16,6 +16,7 @@
   },
   "license": "MIT",
   "author": "eternallycyf(969475322@qq.com)",
+  "packageManager": "pnpm@10.16.1",
   "sideEffects": [
     "**/*.less"
   ],
@@ -23,27 +24,56 @@
   "unpkg": "dist/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./es/index.d.ts",
+      "import": "./es/index.js",
+      "require": "./lib/index.js"
+    },
+    "./jsx-runtime": {
+      "types": "./es/jsx-runtime/index.d.ts",
+      "import": "./es/jsx-runtime/index.js",
+      "require": "./lib/jsx-runtime/index.js"
+    },
+    "./jsx-dev-runtime": {
+      "types": "./es/jsx-dev-runtime/index.d.ts",
+      "import": "./es/jsx-dev-runtime/index.js",
+      "require": "./lib/jsx-dev-runtime/index.js"
+    },
+    "./directive": {
+      "types": "./es/directive/index.d.ts",
+      "import": "./es/directive/index.js",
+      "require": "./lib/directive/index.js"
+    },
+    "./package.json": "./package.json"
+  },
   "files": [
     "lib",
     "es",
-    "dist"
+    "dist",
+    "jsx-runtime",
+    "jsx-dev-runtime",
+    "directive"
   ],
+  "engines": {
+    "node": ">=22.13"
+  },
   "scripts": {
     "build": "father build",
     "build:watch": "father dev",
     "changelog": "conventional-changelog -n node_modules/conventional-changelog-gitmoji-config/lib/index.js -i CHANGELOG.md -s -r 0",
-    "check-error": "npm run lint && npm run test && npm run test:coverage && npm run doctor",
-    "ci": "npm run lint && npm run type-check && npm run doctor && npm run build",
+    "check-error": "pnpm run lint && pnpm run test && pnpm run test:coverage && pnpm run doctor",
+    "ci": "pnpm run lint && pnpm run type-check && pnpm run doctor && pnpm run build",
     "clean": "rm -rf es lib dist coverage .dumi/tmp .eslintcache",
     "dev": "dumi dev",
     "docs:build": "dumi build",
-    "docs:preview": "yarn docs:build && cd dist && npx serve",
+    "docs:preview": "pnpm docs:build && cd dist && npx serve",
     "doctor": "father doctor",
-    "lint": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
-    "prepare": "husky install && npm run setup",
-    "prepublishOnly": "npm run doctor && npm run build",
+    "lint": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\" --ignore-pattern \"**/*.d.ts\"",
+    "prepare": "husky install && pnpm run setup",
+    "prepublishOnly": "pnpm run doctor && pnpm run build",
     "prettier": "prettier -c --write \"**/**\"",
-    "release": "npm run ci && semantic-release",
+    "release": "pnpm run ci && semantic-release",
     "semantic-release": "semantic-release",
     "setup": "dumi setup",
     "start": "dumi dev",
@@ -66,12 +96,10 @@
     ]
   },
   "resolutions": {
-    "dumi": "~2.2.17"
+    "dumi": "~2.4.50"
   },
   "dependencies": {
-    "@babel/runtime": "^7.23.1",
-    "react": "^18",
-    "react-dom": "^18"
+    "@babel/runtime": "^7.23.1"
   },
   "devDependencies": {
     "@ant-design/icons": "^5.2.6",
@@ -91,12 +119,12 @@
     "concurrently": "^7",
     "conventional-changelog-gitmoji-config": "^1",
     "cross-env": "^7",
-    "dumi": "latest",
-    "dumi-theme-antd-style": "latest",
+    "dumi": "~2.4.50",
+    "dumi-theme-antd-style": "~0.31.1",
     "eslint": "^8",
     "father": "^4",
     "husky": "^8",
-    "ims-template-config": "latest",
+    "ims-template-config": "~1.27.0",
     "jsdom": "^22",
     "lint-staged": "^13",
     "lodash": "^4.17.21",
@@ -112,9 +140,9 @@
     "vitest": "^1.x"
   },
   "peerDependencies": {
-    "@ant-design/icons": "^5.2.6",
-    "antd": "^5.9.4",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "react": ">=17",
+    "react-dom": ">=17"
   },
   "publishConfig": {
     "access": "public",

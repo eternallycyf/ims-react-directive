@@ -1,0 +1,5 @@
+{
+  "main": "../lib/directive/index.js",
+  "module": "../es/directive/index.js",
+  "types": "../es/directive/index.d.ts"
+}

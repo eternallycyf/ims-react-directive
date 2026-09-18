@@ -1,32 +1,27 @@
-import 'react';
+import type React from 'react';
 
-type WithIntrinsicAttributesProps = {
+type WithDirectives = {
   'v-if'?: boolean;
   'v-show'?: boolean;
 };
 
-// unpack all here to avoid infinite self-referencing when defining our own JSX namespace
-type ReactJSXElement = JSX.Element | react.ReactNode;
-type ReactJSXElementClass = JSX.ElementClass;
-type ReactJSXElementAttributesProperty = JSX.ElementAttributesProperty;
-type ReactJSXElementChildrenAttribute = JSX.ElementChildrenAttribute;
-type ReactJSXLibraryManagedAttributes<C, P> = JSX.LibraryManagedAttributes<C, P>;
-type ReactJSXIntrinsicAttributes = JSX.IntrinsicAttributes;
-type ReactJSXIntrinsicClassAttributes<T> = JSX.IntrinsicClassAttributes<T>;
-type ReactJSXIntrinsicElements = JSX.IntrinsicElements;
+type MergeDirectives<P> = P & WithDirectives;
 
 export namespace CJSX {
-  interface Element extends ReactJSXElement {}
-  interface ElementClass extends ReactJSXElementClass {}
-  interface ElementAttributesProperty extends ReactJSXElementAttributesProperty {}
-  interface ElementChildrenAttribute extends ReactJSXElementChildrenAttribute {}
+  type Element = React.JSX.Element;
+  type ElementClass = React.JSX.ElementClass;
+  type ElementAttributesProperty = React.JSX.ElementAttributesProperty;
+  type ElementChildrenAttribute = React.JSX.ElementChildrenAttribute;
+  type ElementType = React.JSX.ElementType;
 
-  type LibraryManagedAttributes<C, P> = WithIntrinsicAttributesProps &
-    ReactJSXLibraryManagedAttributes<C, P>;
+  type LibraryManagedAttributes<C, P> = MergeDirectives<
+    React.JSX.LibraryManagedAttributes<C, P>
+  >;
 
-  type IntrinsicAttributes = ReactJSXIntrinsicAttributes & WithIntrinsicAttributesProps;
+  type IntrinsicAttributes = React.JSX.IntrinsicAttributes & WithDirectives;
+  type IntrinsicClassAttributes<T> = React.JSX.IntrinsicClassAttributes<T>;
 
-  interface IntrinsicClassAttributes<T> extends ReactJSXIntrinsicClassAttributes<T> {}
-
-  type IntrinsicElements = ReactJSXIntrinsicElements & WithIntrinsicAttributesProps;
+  type IntrinsicElements = {
+    [K in keyof React.JSX.IntrinsicElements]: MergeDirectives<React.JSX.IntrinsicElements[K]>;
+  };
 }

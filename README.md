@@ -8,7 +8,7 @@
 
 在 react 中使用 v-if 和 v-show
 
-node 版本 v18.13.0
+node 版本 >=22.13（Vercel / CI 使用 24.x）
 
 [Changelog](./CHANGELOG.md) · [Report Bug][issues-url] · [Request Feature][issues-url]
 
@@ -67,14 +67,14 @@ node 版本 v18.13.0
 pnpm i ims-react-directive -S
 ```
 
-## ims-react-direcive
+## ims-react-directive
 
 在 react 项目中使用 vue 指令，支持自定义指令。
 
 ### 安装依赖
 
 ```
-npm i ims-react-direcive
+npm i ims-react-directive
 ```
 
 ### 使用说明
@@ -85,7 +85,7 @@ npm i ims-react-direcive
 {
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "ims-react-direcive",
+    "jsxImportSource": "ims-react-directive",
   }
 }
 ```
@@ -100,7 +100,7 @@ npm i ims-react-direcive
       "@babel/preset-react",
       {
         "runtime": "automatic",
-        "importSource": "ims-react-direcive"
+        "importSource": "ims-react-directive"
       }
     ]
   ]
@@ -114,7 +114,7 @@ npm i ims-react-direcive
 export default defineConfig({
   plugins: [
     react({
-      jsxImportSource: 'ims-react-direcive',
+      jsxImportSource: 'ims-react-directive',
     }),
   ],
 });
@@ -131,7 +131,7 @@ export default defineConfig({
       '@babel/preset-react',
       {
         runtime: 'automatic',
-        importSource: 'ims-react-direcive',
+        importSource: 'ims-react-directive',
       },
     ],
   ],
@@ -149,7 +149,7 @@ export default defineConfig({
         "@babel/preset-react",
         {
           "runtime": "automatic",
-          "importSource": "ims-react-direcive"
+          "importSource": "ims-react-directive"
         }
       ]
     ]
@@ -177,10 +177,10 @@ function App() {
 
 ### 自定义指令
 
-在项目入口，从`ims-react-direcive/directive`引入`directive`，然后就可以自定义指令了。语法如下：
+在项目入口，从`ims-react-directive/directive`引入`directive`，然后就可以自定义指令了。语法如下：
 
 ```js
-import { directive } from 'ims-react-direcive/directive';
+import { directive } from 'ims-react-directive/directive';
 
 // name 指令名称
 directive('name', {
