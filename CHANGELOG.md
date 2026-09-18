@@ -1,5 +1,32 @@
 # Changelog
 
+## [Version&nbsp;1.3.0](https://github.com/eternallycyf/ims-react-directive/compare/v1.2.0...v1.3.0)
+
+<sup>Released on **2026-09-18**</sup>
+
+#### ✨ 新特性
+
+- Rename hanlde param to handle.
+
+#### 🐛 修复
+
+- Rename hanlde param to handle.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Rename hanlde param to handle ([1f5dff0](https://github.com/eternallycyf/ims-react-directive/commit/1f5dff0))
+
+#### What's fixed
+
+- Rename hanlde param to handle ([b7d5a09](https://github.com/eternallycyf/ims-react-directive/commit/b7d5a09))
+
+</details>
+
 ### [Version&nbsp;1.2.1](https://github.com/eternallycyf/ims-react-directive/compare/v1.2.0...v1.2.1)
 
 <sup>Released on **2026-09-18**</sup>
