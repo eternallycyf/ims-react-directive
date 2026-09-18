@@ -33,9 +33,9 @@ directiveMap
     },
   });
 
-export const directive = (name: IDirectiveMapType, hanlde: IDirectiveHandle): void => {
+export const directive = (name: IDirectiveMapType, handle: IDirectiveHandle): void => {
   if (name) {
-    directiveMap.set(name, hanlde);
+    directiveMap.set(name, handle);
   }
 };
 
