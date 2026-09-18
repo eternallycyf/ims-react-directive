@@ -33,6 +33,7 @@ directiveMap
     },
   });
 
+/** Register or override a directive handler by name. */
 export const directive = (name: IDirectiveMapType, handle: IDirectiveHandle): void => {
   if (name) {
     directiveMap.set(name, handle);
