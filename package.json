@@ -1,6 +1,6 @@
 {
   "name": "ims-react-directive",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "a online docs and npm package template",
   "keywords": [
     "npm",
@@ -16,14 +16,9 @@
   },
   "license": "MIT",
   "author": "eternallycyf(969475322@qq.com)",
-  "packageManager": "pnpm@10.16.1",
   "sideEffects": [
     "**/*.less"
   ],
-  "main": "lib/index.js",
-  "unpkg": "dist/index.js",
-  "module": "es/index.js",
-  "types": "es/index.d.ts",
   "exports": {
     ".": {
       "types": "./es/index.d.ts",
@@ -47,6 +42,10 @@
     },
     "./package.json": "./package.json"
   },
+  "main": "lib/index.js",
+  "unpkg": "dist/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
   "files": [
     "lib",
     "es",
@@ -55,9 +54,6 @@
     "jsx-dev-runtime",
     "directive"
   ],
-  "engines": {
-    "node": ">=22.13"
-  },
   "scripts": {
     "build": "father build",
     "build:watch": "father dev",
@@ -143,6 +139,10 @@
     "lodash": "^4.17.21",
     "react": ">=17",
     "react-dom": ">=17"
+  },
+  "packageManager": "pnpm@10.16.1",
+  "engines": {
+    "node": ">=22.13"
   },
   "publishConfig": {
     "access": "public",

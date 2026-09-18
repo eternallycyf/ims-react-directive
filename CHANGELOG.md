@@ -1,5 +1,34 @@
 # Changelog
 
+## [Version&nbsp;1.2.0](https://github.com/eternallycyf/ims-react-directive/compare/v1.1.0...v1.2.0)
+
+<sup>Released on **2026-09-18**</sup>
+
+#### ✨ 新特性
+
+- Update packages.
+
+#### 📝 文档
+
+- Footer z-index, footer z-index, update LICENSE.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Update packages ([df145a5](https://github.com/eternallycyf/ims-react-directive/commit/df145a5))
+
+#### Documentation
+
+- Footer z-index ([ea492e2](https://github.com/eternallycyf/ims-react-directive/commit/ea492e2))
+- Footer z-index ([7d07849](https://github.com/eternallycyf/ims-react-directive/commit/7d07849))
+- Update LICENSE ([1da2d6d](https://github.com/eternallycyf/ims-react-directive/commit/1da2d6d))
+
+</details>
+
 ## [Version&nbsp;1.1.0](https://github.com/eternallycyf/ims-react-directive/compare/v1.0.1...v1.1.0)
 
 <sup>Released on **2024-05-05**</sup>
