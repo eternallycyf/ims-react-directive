@@ -8,7 +8,7 @@
 
 在 react 中使用 v-if 和 v-show
 
-node 版本 >=22.13（Vercel / CI 使用 24.x）
+node 版本 24.x（Vercel 文档站构建）
 
 [Changelog](./CHANGELOG.md) · [Report Bug][issues-url] · [Request Feature][issues-url]
 

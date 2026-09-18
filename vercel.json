@@ -3,5 +3,5 @@
   "framework": null,
   "buildCommand": "pnpm run docs:build",
   "outputDirectory": "docs-dist",
-  "installCommand": "corepack enable && corepack prepare pnpm@10.16.1 --activate && pnpm install"
+  "installCommand": "pnpm install"
 }
