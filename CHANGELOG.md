@@ -1,5 +1,24 @@
 # Changelog
 
+### [Version&nbsp;1.3.2](https://github.com/eternallycyf/ims-react-directive/compare/v1.3.1...v1.3.2)
+
+<sup>Released on **2026-09-18**</sup>
+
+#### 🐛 修复
+
+- 修复问题.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- 修复问题 ([58a1c62](https://github.com/eternallycyf/ims-react-directive/commit/58a1c62))
+
+</details>
+
 ### [Version&nbsp;1.3.1](https://github.com/eternallycyf/ims-react-directive/compare/v1.3.0...v1.3.1)
 
 <sup>Released on **2026-09-18**</sup>
