@@ -1,5 +1,24 @@
 # Changelog
 
+### [Version&nbsp;1.3.1](https://github.com/eternallycyf/ims-react-directive/compare/v1.3.0...v1.3.1)
+
+<sup>Released on **2026-09-18**</sup>
+
+#### 🐛 修复
+
+- Document directive registration helper.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- Document directive registration helper ([68ab87a](https://github.com/eternallycyf/ims-react-directive/commit/68ab87a))
+
+</details>
+
 ## [Version&nbsp;1.3.0](https://github.com/eternallycyf/ims-react-directive/compare/v1.2.0...v1.3.0)
 
 <sup>Released on **2026-09-18**</sup>
